@@ -1,7 +1,8 @@
 import * as _  from "lodash";
 import * as  Hapi  from "hapi";
 
-import * as Person from "./lib/person";
+//import * as Person from "./lib/person"; // does not work
+import Person = require("./lib/person");
 
 const server: Hapi.Server = new Hapi.Server();
 const serverOptions: { port: number, host: string} = { port: 3000, host: "localhost" };
